@@ -1,0 +1,128 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+}
+header {
+	width: 80%;
+	margin: auto;
+	background-color: rgba(204, 255, 221, 0.7);
+	position: sticky;
+	top: 0px;
+	z-index: 1;
+	border-radius: 10px;
+}
+nav {
+	display: inline;
+	float: right;
+	margin-top: 20px;
+}
+.media {
+	display: none;
+}
+.dropdown {
+	display: none;
+}
+.anav {
+	color: inherit;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 15px;
+	padding: 10px 5px 5px 5px;
+}
+.anav:hover {
+	background-color: lightgrey;
+	border-radius: 15px;
+}
+#hrm {
+	height: 50px;
+	width: auto;
+	padding-left: 10px;
+}
+article {
+	padding: 20px;
+}
+.cover {
+	background: url(../images/cover.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 60%;
+	margin: auto;
+	height: 250px;
+	border-radius: 30px;
+}
+.clanak {
+	width: 45%;
+	margin: auto;
+	text-align: justify;
+	position: relative;
+	top: -50px;
+	background-color: rgb(204, 255, 221);
+	padding: 2px 30px 40px 30px;
+	border: 1px solid grey;
+	border-radius: 20px;
+}
+h1 {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+time {
+	font-size: 14px;
+}
+#procitaj {
+	background-color: beige;
+	padding: 5px 10px;
+	border: 1px solid grey;
+	border-radius: 4px;
+	text-decoration: none;
+	color: inherit;
+	position: relative;
+	left: 45%;
+}
+#autor {
+	border-radius: 25px;
+	border: 1px solid grey;
+	float: right;
+	position: relative;
+	bottom: 20px; 
+}
+@media screen and (max-width: 855px) {
+	.dropdown {
+		display: initial;
+		padding: 20px;
+		position: relative;
+	}
+	.anav {
+		display: none;
+	}
+	.media {
+		display: block;
+	}
+	.dropdown-menu {
+		display: none;
+		position: absolute;
+		background-color: lightgrey;
+	    padding: 10px;
+	}
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+	.anavmedia {
+		color: initial;
+		text-decoration: none;
+		text-transform: uppercase;
+	}
+	.clanak {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 600px) {
+	#autor {
+		display: none;
+	}
+	.cover {
+		display: none;
+	}
+}
